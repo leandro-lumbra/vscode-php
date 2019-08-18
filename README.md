@@ -34,22 +34,9 @@ Once you set up the alias above, you can simply launch your "IDE" with simple co
 To stop the container and auto-remove it:
 Just use `Ctrl+C`
 
-## Configure Xdebug to work
-This image makes assumption that the default remote server file path is at `/var/www/html/`.
-
-To create a file path mapping between remote and local file system, you have to set the `localSourceRoot` and `serverSourceRoot` settings in your `launch.json`, for example:
-
-```
-"serverSourceRoot": "/var/www/html/",
-"localSourceRoot": "${cwd}"
-```
-
-More documentation on this bit configuration can be fund [here](https://github.com/felixfbecker/vscode-php-debug#remote-host-debugging).
-
 ## List of `vscode` extensions included
 
-* [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)
-* [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+* [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 * [Twig](https://marketplace.visualstudio.com/items?itemName=whatwedo.twig)
 * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 

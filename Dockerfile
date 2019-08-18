@@ -51,7 +51,7 @@ RUN useradd --create-home --home-dir $HOME user \
 ENV VSCODEEXT /var/vscode-ext
 RUN mkdir $VSCODEEXT \
     && chown -R user:user $VSCODEEXT \
-	&& su user -c "code --extensions-dir $VSCODEEXT --install-extension felixfbecker.php-intellisense --install-extension felixfbecker.php-debug --install-extension whatwedo.twig --install-extension ms-azuretools.vscode-docker"
+	&& su user -c "code --extensions-dir $VSCODEEXT --install-extension bmewburn.vscode-intelephense-client --install-extension whatwedo.twig --install-extension ms-azuretools.vscode-docker"
 
 COPY start.sh /usr/local/bin/start.sh
 
